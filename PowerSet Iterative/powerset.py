@@ -1,13 +1,11 @@
-stack = [[]]
 queue = [[]]
-array = [1,2,3]
+array = [1,2,3] #the sample array
 
 for element in array:
-    n = len(stack)
+    n = len(queue)
     for i in range(n):
         value = queue.pop(0)
-        stack.append(value+[element])
         queue.append(value)
         queue.append(value+[element])
 
-print(stack)
+print(queue)
