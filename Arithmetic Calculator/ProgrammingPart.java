@@ -105,6 +105,9 @@ public class ProgrammingPart {
     /* Used true = 1.10101 and false = 0.10101 instead of the usual binary 1 and 0 
      * as they are common results of arithmetic evaluations whereas 1.10101 and 
      * 0.10101 have a very less chance of coming out as results of arithmetic evals. 
+     * To do: Better approach would be for operand stack to store String values and 
+     * use Double.ParseDouble() while performing calculation so that boolean values 
+     * are easier to store. 
      * Overall time complexity of calculator = O(n)
      */
             
