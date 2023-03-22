@@ -88,12 +88,12 @@ public class FibonacciCalculators {
 		}
 		
 		//BINARY FIB [O(2^n)]
-		//stopped calculating at 50 as my local machine takes lot more time beyond 50
+		//stopped calculating at 45 as my local machine takes lot more time beyond 50
 		
 		pw3.println("OUTPUT RUNTIMES FOR BINARY RECURSIVE FIBONACCI ALGORITHM\n");
 		pw3.println(String.format("%-5s \t %20s \t %20s\n","n","nth Fibonacci Number","Run-time(nanoseconds)"));
 		
-		for (int i = 0; i <= 50; i+=5) {
+		for (int i = 0; i <= 45; i+=5) {
 			startTime = System.nanoTime();
 			fibNo = binFib(i);
 			duration = System.nanoTime() - startTime;
